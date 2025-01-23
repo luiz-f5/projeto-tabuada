@@ -15,7 +15,7 @@
   <hr>
   <form action="imposto.php" method="get" step="0.01">
     <p>
-      Digite seu valor salarial:
+      Digite seu valor salarial do mes:
     </p>
     <input type="number" name="salario" step="0.01"><br><br>
     <input value="Clique aqui!" type="submit">
@@ -34,7 +34,7 @@
       $p4 = $salario * $a_4;
 
     } else {
-      echo "<br><b>Por favor digite seu salário!</b>";
+      echo "<br><b>Por favor digite seu salário do mes!</b>";
     }
 
     if ($salario >= 2259.21 && $salario <= 2836.65) {
