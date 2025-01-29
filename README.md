@@ -1,4 +1,4 @@
-#PROJETO TABUADA(VERSÃO FINAL)
+# PROJETO TABUADA(VERSÃO FINAL)
 
 A iniciativa do Projeto(Tabuada) é fazer uma simples consulta das quatros operações:
 
@@ -12,7 +12,11 @@ A iniciativa do Projeto(Tabuada) é fazer uma simples consulta das quatros opera
 
 Segue o link do projeto para consulta: <a href="https://louissqli.site/" target="_blank"> Projeto Tabuada </a> 
 
-Grupo: Luiz Henrique Ramos de Souza, Matheus Henrique, Lucas Soares da Silva, Marcel Rolland Ciro e João Paulo Hess Indig
+**Grupo:** 
 
-1. Aprenda Com os Melhores
-2. Programação Sem Limites
+- *Luiz Henrique Ramos de Souza*
+- *Matheus Henrique*
+- *Lucas Soares da Silva*
+- *Marcel Rolland Ciro* 
+- *João Paulo Hess Indig*
+
