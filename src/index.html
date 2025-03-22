@@ -1,95 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
+
 <body>
-    <h1>Área de um retângulo</h1>
-    <form id="areaForm">
-        <input type="number" id="length" placeholder="Digite a altura" required><br><br>
-        <input type="number" id="width" placeholder="Digite a largura" required><br><br>
-        <button type="button" onclick="algoArea()">Enviar</button>
-    </form>
-    <p id="resultArea"></p>
 
-    <h1>Calculadora de Fatorial</h1>
-    <form id="factorialForm">
-        <input type="number" id="numFat" placeholder="Digite um número" required><br><br>
-        <button type="button" onclick="algoFat()">Enviar</button>
-    </form>
-    <p id="resultFat"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Área de um retângulo</h1>
+            <form id="areaForm">
+                <input type="number" id="length" placeholder="Digite a altura" required><br><br>
+                <input type="number" id="width" placeholder="Digite a largura" required><br><br>
+                <button type="button" onclick="algoArea()">Enviar</button>
+            </form>
+            <p id="resultArea"></p>
+        </div>
+    </div>
 
-    <h1>Calculadora Fibonnaci</h1>
-    <form id="fibForm">
-        <input type="number" id="numFib" placeholder="Digite um número" required><br><br>
-        <button type="button" onclick="algoFib()">Enviar</button>
-    </form>
-    <p id="resultFib"></p>
-    
-    <h1>Calculadora de Imposto</h1>
-    <form id="impostoForm">
-        <input type="number" id="salario" placeholder="Digite seu salário" required><br><br>
-        <button type="button" onclick="algoImposto()">Enviar</button>
-    </form>
-    <p id="resultImp"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Calculadora de Fatorial</h1>
+            <form id="factorialForm">
+                <input type="number" id="numFat" placeholder="Digite um número" required><br><br>
+                <button type="button" onclick="algoFat()">Enviar</button>
+            </form>
+            <p id="resultFat"></p>
+        </div>
+    </div>
 
-    <h1>Cheque de Valor</h1>
-    <form id="maiorForm">
-        <input type="number" id="numA" placeholder="Digite o primeiro valor" required><br><br>
-        <input type="number" id="numB" placeholder="Digite o segundo valor" required><br><br>
-        <input type="number" id="numC" placeholder="Digite o terceiro valor" required><br><br>
-        <button type="button" onclick="algoMaior()">Enviar</button>
-    </form>
-    <p id="resultMaior"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Calculadora Fibonnaci</h1>
+            <form id="fibForm">
+                <input type="number" id="numFib" placeholder="Digite um número" required><br><br>
+                <button type="button" onclick="algoFib()">Enviar</button>
+            </form>
+            <p id="resultFib"></p>
+        </div>
+    </div>
 
-    
-    <h1>Calculadora de Media</h1>
-    <form id="mediaForm">
-        <input type="number" id="medA" placeholder="Digite o primeiro valor" required><br><br>
-        <input type="number" id="medB" placeholder="Digite o segundo valor" required><br><br>
-        <input type="number" id="medC" placeholder="Digite o terceiro valor" required><br><br>
-        <button type="button" onclick="algoMedia()">Enviar</button>
-    </form>
-    <p id="resultMedia"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Calculadora de Imposto</h1>
+            <form id="impostoForm">
+                <input type="number" id="salario" placeholder="Digite seu salário" required><br><br>
+                <button type="button" onclick="algoImposto()">Enviar</button>
+            </form>
+            <p id="resultImp"></p>
+        </div>
+    </div>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Cheque de Valor</h1>
+            <form id="maiorForm">
 
-    
-    <h1>Cheque de número Primo</h1>
-    <form id="primoForm">
-        <input type="number" id="primo" placeholder="Digite um valor" required><br><br>
-        <button type="button" onclick="algoPrimo()">Enviar</button>
-    </form>
-    <p id="resultPrimo"></p>
+                <input type="number" id="numA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" id="numB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" id="numC" placeholder="Digite o terceiro valor" required><br><br>
+                <button type="button" onclick="algoMaior()">Enviar</button>
+            </form>
+            <p id="resultMaior" class="resposta"></p>
+        </div>
+    </div>
 
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Calculadora de Media</h1>
+            <form id="mediaForm">
+                <input type="number" id="medA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" id="medB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" id="medC" placeholder="Digite o terceiro valor" required><br><br>
+                <button type="button" onclick="algoMedia()">Enviar</button>
+            </form>
+            <p id="resultMedia"></p>
+        </div>
+    </div>
 
-    <h1>Ordenação de valores</h1>
-    <form id="ordeForm">
-        <input type="number" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
-        <input type="number" id="ordB" placeholder="Digite o segundo valor" required><br><br>
-        <input type="number" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
-        <button type="button" onclick="algoOrde()">Enviar</button>
-    </form>
-    <p id="resultOrde"></p>
-    <p1 id="resultOrde1"></p1>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Cheque de número Primo</h1>
+            <form id="primoForm">
+                <input type="number" id="primo" placeholder="Digite um valor" required><br><br>
+                <button type="button" onclick="algoPrimo()">Enviar</button>
+            </form>
+            <p id="resultPrimo"></p>
+        </div>
+    </div>
 
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Ordenação de valores</h1>
+            <form id="ordeForm">
+                <input type="number" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" id="ordB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
+                <button type="button" onclick="algoOrde()">Enviar</button>
+            </form>
+            <p id="resultOrde"></p>
+            <p1 id="resultOrde1"></p1>
+        </div>
+    </div>
 
-    <h1>Cheque de Par our Impar</h1>
-    <form id="parForm">
-        <input type="number" id="numPar" placeholder="Digite um valor" required><br><br>
-        <button type="button" onclick="algoPar()">Enviar</button>
-    </form>
-    <p id="resultPar"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Cheque de Par our Impar</h1>
+            <form id="parForm">
+                <input type="number" id="numPar" placeholder="Digite um valor" required><br><br>
+                <button type="button" onclick="algoPar()">Enviar</button>
+            </form>
+            <p id="resultPar"></p>
+        </div>
+    </div>
 
-    
-    <h1>Tabuada</h1>
-    <form id="tabForm">
-        <input type="number" id="tabuada" placeholder="Digite um valor" required><br><br>
-        <button type="button" onclick="algoTab()">Enviar</button>
-    </form>
-    <p id="resultTab"></p>
+    <div class="corSecundaria">
+        <div class="corPrimaria">
+            <h1>Tabuada</h1>
+            <form id="tabForm">
+                <input type="number" id="tabuada" placeholder="Digite um valor" required><br><br>
+                <button type="button" onclick="algoTab()">Enviar</button>
+            </form>
+            <p id="resultTab"></p>
+        </div>
+    </div>
 
-
-    <script src="../assets/script.js"></script> 
+    <script src="../assets/script.js"></script>
 </body>
+
 </html>
