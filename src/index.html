@@ -5,17 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
+    <div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Algoritmos</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </div>
+          </nav>   
+    </div>
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Área de um retângulo</h1>
-            <form id="areaForm">
-                <input type="number" id="length" placeholder="Digite a altura" required><br><br>
-                <input type="number" id="width" placeholder="Digite a largura" required><br><br>
-                <button type="button" onclick="algoArea()">Enviar</button>
+            <form id="areaForm" class="form-inline" >
+                <input type="number" class="form-control" id="length" placeholder="Digite a altura" required><br><br>
+                <input type="number" class="form-control" id="width" placeholder="Digite a largura" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoArea()">Enviar</button>
             </form>
             <p id="resultArea"></p>
         </div>
@@ -24,9 +41,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Calculadora de Fatorial</h1>
-            <form id="factorialForm">
-                <input type="number" id="numFat" placeholder="Digite um número" required><br><br>
-                <button type="button" onclick="algoFat()">Enviar</button>
+            <form id="factorialForm" class="form-inline" >
+                <input type="number" class="form-control" id="numFat" placeholder="Digite um número" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoFat()">Enviar</button>
             </form>
             <p id="resultFat"></p>
         </div>
@@ -35,9 +52,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Calculadora Fibonnaci</h1>
-            <form id="fibForm">
-                <input type="number" id="numFib" placeholder="Digite um número" required><br><br>
-                <button type="button" onclick="algoFib()">Enviar</button>
+            <form id="fibForm" class="form-inline" >
+                <input type="number" class="form-control" id="numFib" placeholder="Digite um número" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoFib()">Enviar</button>
             </form>
             <p id="resultFib"></p>
         </div>
@@ -46,9 +63,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Calculadora de Imposto</h1>
-            <form id="impostoForm">
-                <input type="number" id="salario" placeholder="Digite seu salário" required><br><br>
-                <button type="button" onclick="algoImposto()">Enviar</button>
+            <form id="impostoForm" class="form-inline" >
+                <input type="number" class="form-control" id="salario" placeholder="Digite seu salário" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoImposto()">Enviar</button>
             </form>
             <p id="resultImp"></p>
         </div>
@@ -56,12 +73,12 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Cheque de Valor</h1>
-            <form id="maiorForm">
+            <form id="maiorForm" class="form-inline" >
 
-                <input type="number" id="numA" placeholder="Digite o primeiro valor" required><br><br>
-                <input type="number" id="numB" placeholder="Digite o segundo valor" required><br><br>
-                <input type="number" id="numC" placeholder="Digite o terceiro valor" required><br><br>
-                <button type="button" onclick="algoMaior()">Enviar</button>
+                <input type="number" class="form-control" id="numA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" class="form-control" id="numB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" class="form-control" id="numC" placeholder="Digite o terceiro valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoMaior()">Enviar</button>
             </form>
             <p id="resultMaior" class="resposta"></p>
         </div>
@@ -70,11 +87,11 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Calculadora de Media</h1>
-            <form id="mediaForm">
-                <input type="number" id="medA" placeholder="Digite o primeiro valor" required><br><br>
-                <input type="number" id="medB" placeholder="Digite o segundo valor" required><br><br>
-                <input type="number" id="medC" placeholder="Digite o terceiro valor" required><br><br>
-                <button type="button" onclick="algoMedia()">Enviar</button>
+            <form id="mediaForm" class="form-inline" >
+                <input type="number" class="form-control" id="medA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" class="form-control" id="medB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" class="form-control" id="medC" placeholder="Digite o terceiro valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoMedia()">Enviar</button>
             </form>
             <p id="resultMedia"></p>
         </div>
@@ -83,9 +100,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Cheque de número Primo</h1>
-            <form id="primoForm">
-                <input type="number" id="primo" placeholder="Digite um valor" required><br><br>
-                <button type="button" onclick="algoPrimo()">Enviar</button>
+            <form id="primoForm" class="form-inline" >
+                <input type="number" class="form-control" id="primo" placeholder="Digite um valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoPrimo()">Enviar</button>
             </form>
             <p id="resultPrimo"></p>
         </div>
@@ -94,11 +111,11 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Ordenação de valores</h1>
-            <form id="ordeForm">
-                <input type="number" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
-                <input type="number" id="ordB" placeholder="Digite o segundo valor" required><br><br>
-                <input type="number" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
-                <button type="button" onclick="algoOrde()">Enviar</button>
+            <form id="ordeForm" class="form-inline" >
+                <input type="number" class="form-control" id="ordA" placeholder="Digite o primeiro valor" required><br><br>
+                <input type="number" class="form-control" id="ordB" placeholder="Digite o segundo valor" required><br><br>
+                <input type="number" class="form-control" id="ordC" placeholder="Digite o terceiro valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoOrde()">Enviar</button>
             </form>
             <p id="resultOrde"></p>
             <p1 id="resultOrde1"></p1>
@@ -108,9 +125,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Cheque de Par our Impar</h1>
-            <form id="parForm">
-                <input type="number" id="numPar" placeholder="Digite um valor" required><br><br>
-                <button type="button" onclick="algoPar()">Enviar</button>
+            <form id="parForm" class="form-inline" >
+                <input type="number" class="form-control" id="numPar" placeholder="Digite um valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoPar()">Enviar</button>
             </form>
             <p id="resultPar"></p>
         </div>
@@ -119,9 +136,9 @@
     <div class="corSecundaria">
         <div class="corPrimaria">
             <h1>Tabuada</h1>
-            <form id="tabForm">
-                <input type="number" id="tabuada" placeholder="Digite um valor" required><br><br>
-                <button type="button" onclick="algoTab()">Enviar</button>
+            <form id="tabForm" class="form-inline" >
+                <input type="number" class="form-control" id="tabuada" placeholder="Digite um valor" required><br><br>
+                <button class="btn btn-default navbar-btn" type="button" onclick="algoTab()">Enviar</button>
             </form>
             <p id="resultTab"></p>
         </div>
